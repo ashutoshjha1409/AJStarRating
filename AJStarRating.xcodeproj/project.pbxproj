@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263B33AB1D93472B6590261A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886537D9B5A9F88C06A6B1B /* Pods.framework */; };
 		D7AEC0E11C82F7490029EAD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AEC0E01C82F7490029EAD8 /* AppDelegate.swift */; };
 		D7AEC0E31C82F7490029EAD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AEC0E21C82F7490029EAD8 /* ViewController.swift */; };
 		D7AEC0E61C82F7490029EAD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7AEC0E41C82F7490029EAD8 /* Main.storyboard */; };
 		D7AEC0E81C82F74A0029EAD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7AEC0E71C82F74A0029EAD8 /* Assets.xcassets */; };
 		D7AEC0EB1C82F74A0029EAD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7AEC0E91C82F74A0029EAD8 /* LaunchScreen.storyboard */; };
 		D7AEC0F61C82F74B0029EAD8 /* AJStarRatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AEC0F51C82F74B0029EAD8 /* AJStarRatingTests.swift */; };
+		D7AEC1011C82F7C00029EAD8 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AEC1001C82F7C00029EAD8 /* RatingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1886537D9B5A9F88C06A6B1B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD562D82C67CE4BB2A899F6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AE1569A2BFED81E68FCA41BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D7AEC0DD1C82F7490029EAD8 /* AJStarRating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJStarRating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AEC0E01C82F7490029EAD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7AEC0E21C82F7490029EAD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		D7AEC0F11C82F74B0029EAD8 /* AJStarRatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJStarRatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AEC0F51C82F74B0029EAD8 /* AJStarRatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJStarRatingTests.swift; sourceTree = "<group>"; };
 		D7AEC0F71C82F74B0029EAD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7AEC1001C82F7C00029EAD8 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263B33AB1D93472B6590261A /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F532E19CB1B9FCB9F9AC47E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1886537D9B5A9F88C06A6B1B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B303FC554801A6C2A7AC022D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE1569A2BFED81E68FCA41BC /* Pods.debug.xcconfig */,
+				4FD562D82C67CE4BB2A899F6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D7AEC0D41C82F7480029EAD8 = {
 			isa = PBXGroup;
 			children = (
 				D7AEC0DF1C82F7490029EAD8 /* AJStarRating */,
 				D7AEC0F41C82F74B0029EAD8 /* AJStarRatingTests */,
 				D7AEC0DE1C82F7490029EAD8 /* Products */,
+				B303FC554801A6C2A7AC022D /* Pods */,
+				6F532E19CB1B9FCB9F9AC47E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +109,7 @@
 				D7AEC0E71C82F74A0029EAD8 /* Assets.xcassets */,
 				D7AEC0E91C82F74A0029EAD8 /* LaunchScreen.storyboard */,
 				D7AEC0EC1C82F74A0029EAD8 /* Info.plist */,
+				D7AEC1001C82F7C00029EAD8 /* RatingViewController.swift */,
 			);
 			path = AJStarRating;
 			sourceTree = "<group>";
@@ -103,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7AEC0FA1C82F74B0029EAD8 /* Build configuration list for PBXNativeTarget "AJStarRating" */;
 			buildPhases = (
+				7602369ACAD87EB12B62903A /* Check Pods Manifest.lock */,
 				D7AEC0D91C82F7490029EAD8 /* Sources */,
 				D7AEC0DA1C82F7490029EAD8 /* Frameworks */,
 				D7AEC0DB1C82F7490029EAD8 /* Resources */,
+				7A4E59A6DE76A3C172BA1304 /* Embed Pods Frameworks */,
+				EF85A104CE622B2A5162DF0E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,11 +224,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7602369ACAD87EB12B62903A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4E59A6DE76A3C172BA1304 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF85A104CE622B2A5162DF0E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7AEC0D91C82F7490029EAD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7AEC1011C82F7C00029EAD8 /* RatingViewController.swift in Sources */,
 				D7AEC0E31C82F7490029EAD8 /* ViewController.swift in Sources */,
 				D7AEC0E11C82F7490029EAD8 /* AppDelegate.swift in Sources */,
 			);
@@ -325,6 +404,7 @@
 		};
 		D7AEC0FB1C82F74B0029EAD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE1569A2BFED81E68FCA41BC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AJStarRating/Info.plist;
@@ -336,6 +416,7 @@
 		};
 		D7AEC0FC1C82F74B0029EAD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD562D82C67CE4BB2A899F6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AJStarRating/Info.plist;
@@ -388,6 +469,7 @@
 				D7AEC0FC1C82F74B0029EAD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7AEC0FD1C82F74B0029EAD8 /* Build configuration list for PBXNativeTarget "AJStarRatingTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +478,7 @@
 				D7AEC0FF1C82F74B0029EAD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
